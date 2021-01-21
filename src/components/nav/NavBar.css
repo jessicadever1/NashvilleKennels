@@ -2,7 +2,8 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: left;
-    background-color: blue;
+    background-color: lavenderblush;
+    padding: 1rem;
 }
 
 .navbar__item {
