@@ -7,12 +7,13 @@ import { CustomerCard } from './customer/CustomerCard'
 import { EmployeeCard } from './employee/EmployeeCard'
 import { AnimalProvider } from "./animal/AnimalProvider"
 import { AnimalList } from "./animal/AnimalList"
-import { CustomerProvider } from "./customer/CustomerDataProvider"
+import { CustomerProvider } from "./customer/CustomerProvider"
 import { CustomerList } from "./customer/CustomerList"
 import { EmployeeProvider } from "./employee/EmployeeProvider"
 import { EmployeeList } from "./employee/EmployeeList"
 import { LocationProvider } from "./location/LocationProvider"
 import { LocationList } from "./location/LocationList"
+import { AnimalForm } from "./animal/AnimalForm"
 
 export const ApplicationViews = () => {
     return (
@@ -24,21 +25,14 @@ export const ApplicationViews = () => {
 
             {/* Render the animal list when http://localhost:3000/animals */}
             
-            {/* <AnimalProvider>
-                <LocationProvider>
-                    <CustomerProvider>
-                        <Route exact path="/animals/create">
-                            <AnimalForm />
-                        </Route>
-                    </CustomerProvider>
-                </LocationProvider>
-            </AnimalProvider> */}
-            
             <LocationProvider>
                 <CustomerProvider>
                     <AnimalProvider>
                         <Route exact path="/animals">
                             <AnimalList />
+                        </Route>
+                        <Route exact path="/animals/create">
+                            <AnimalForm />
                         </Route>
                     </AnimalProvider>
                 </CustomerProvider>
