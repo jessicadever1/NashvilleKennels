@@ -31,7 +31,7 @@ export const EmployeeForm = () => {
         setEmployee(newEmployee)
     }
 
-    const handleClickSaveAnimal = (event) => {
+    const handleClickSaveEmployee = (event) => {
         event.preventDefault()
 
         const locationId = employee.locationId
@@ -69,7 +69,7 @@ export const EmployeeForm = () => {
             </fieldset>
             
             <button className="btn btn-primary"
-                onClick={handleClickSaveAnimal}>
+                onClick={handleClickSaveEmployee}>
                 Save Employee
             </button>
         </form>
