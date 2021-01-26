@@ -19,7 +19,7 @@ useEffect(() => {
 return (
 
     <div className="employees">
-    <h2>Animals</h2>
+    <h2>Employees</h2>
             <button onClick={() => {history.push("/employees/create")}}>
                 New Employee
             </button>
