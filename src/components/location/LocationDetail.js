@@ -30,9 +30,3 @@ export const LocationDetail = () => {
         </section>
     )
 }
-
-
-/*
-
-<div className="location__animals">Pets: {location.animal?.name}</div>
-*/
